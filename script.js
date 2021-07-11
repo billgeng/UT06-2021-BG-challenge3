@@ -44,7 +44,8 @@ generateBtn.addEventListener("click",alertWindow);
 
 
         if (!LowerCheck && !UpperCheck  && !NumberCheck && !SpecialCheck) {
-            window.alert ("Please choose at least one type of character. Try again") ; 
+            window.alert ("Please choose at least one type of character. Try again") ;
+            return; 
            
         }  else if (LowerCheck && !UpperCheck && !NumberCheck && !SpecialCheck)
             {pSelection = lowercaseAlphabetChar ;
